@@ -1,0 +1,22 @@
+{
+  "name": "vitepress-template",
+  "scripts": {
+    "dev": "vitepress dev docs --host",
+    "build": "vitepress build docs"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "better-scroll": "^2.5.0",
+    "qrcode.vue": "^3.3.3",
+    "vitepress": "^1.0.0-alpha.45",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "fighting-design": "0.7.0-alpha.3",
+    "less": "^4.0.0",
+    "sass": "^1.54.9",
+    "vite": "^3.0.9"
+  }
+}

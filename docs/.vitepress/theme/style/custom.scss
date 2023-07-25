@@ -1,0 +1,25 @@
+:root {
+  --vp-sidebar-width: 300px; //侧边栏宽度
+  --vp-c-brand-dark: #5d80f4;
+  --vp-c-green: #5d80f4;
+  --vp-c-text-dark-3: #ccc; //代码块右上角语言
+  --vp-code-copy-code-active-text: rgb(128, 128, 128); //复制成功
+
+  --vp-c-bg-alt: #fff; // 侧边栏
+  --vp-code-block-bg: #333; //代码块背景色
+  --contrast1-color: #000;
+  --contrast2-color: #fff;
+  --font-color: #34495e; //字体色
+  --cb-bg: #fff; //ContainerBox组件背景色
+  --cb-shadow: #ebedf0; //ContainerBox组件阴影
+}
+
+.dark {
+  --vp-c-bg-alt: rgb(36, 36, 36); // 深色模式侧边栏
+  --vp-code-block-bg: #1f1f1f; //代码块背景色
+  --contrast1-color: #fff;
+  --contrast2-color: #000;
+  --font-color: #ebebeb99; //字体色
+  --cb-bg: #242424; //ContainerBox组件背景色
+  --cb-shadow: #1a1a1a; //ContainerBox组件阴影
+}

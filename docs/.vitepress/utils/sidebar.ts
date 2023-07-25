@@ -1,0 +1,207 @@
+/**
+ * 侧边栏模块
+ *
+ * 详情参考：https://vitepress.vuejs.org/guide/theme-sidebar
+ */
+export const sidebar = {
+  "/Components/": [
+    {
+      text: "开发指南",
+      collapsible: true,
+      items: [
+        { text: "介绍", link: "/Components/base/introduce" },
+        { text: "迁移改变", link: "/Components/base/change" },
+        { text: "快速开始", link: "/Components/base/start" },
+      ],
+    },
+    {
+      text: "静态组件",
+      collapsible: true,
+      link: "/Components/statics/Ico",
+      items: [
+        { text: "图标", link: "/Components/statics/Icon" },
+        { text: "SVG变色图标", link: "/Components/statics/Svg" },
+        { text: "提交按钮", link: "/Components/statics/CommitBtn" },
+        { text: "更新按钮", link: "/Components/statics/UpdateBtn" },
+        { text: "删除按钮", link: "/Components/statics/DeleteBtn" },
+        { text: "条纹加载按钮", link: "/Components/statics/StripeBtn" },
+        { text: "放射点击效果", link: "/Components/statics/TriggerRay" },
+        { text: "Grid特色布局", link: "/Components/statics/GridLayout" },
+        { text: "Grid数字模板布局", link: "/Components/statics/GridNumber" },
+        { text: "Grid字母模板布局", link: "/Components/statics/GridLetter" },
+        { text: "视频播放器", link: "/Components/statics/Video" },
+        { text: "顶部关闭蒙版", link: "/Components/statics/MaskClose" },
+        { text: "卡片翻转", link: "/Components/statics/FlipBox" },
+        { text: "蒙版", link: "/Components/statics/Mask" },
+        { text: "loading", link: "/Components/statics/Loading" },
+        { text: "iframe", link: "/Components/statics/Iframe" },
+        { text: "移动端提示横屏浏览", link: "/Components/statics/PhoneTip" },
+        { text: "全屏滚动", link: "/Components/statics/FullScroll" },
+        { text: "滑动选择器", link: "/Components/statics/Range" },
+        { text: "环形进度条", link: "/Components/statics/CircularProgress" },
+        { text: "移动端滚动插件", link: "/Components/statics/Scroll" },
+      ],
+    },
+    {
+      text: "动态组件",
+      collapsible: true,
+      items: [
+        { text: "视差动画", link: "/Components/dynamics/Parallax" },
+        { text: "瀑布流布局", link: "/Components/dynamics/Waterfall" },
+        { text: "拖拽排序", link: "/Components/dynamics/DragSort" },
+        { text: "文件上传", link: "/Components/dynamics/UploadFile" },
+        { text: "图片上传", link: "/Components/dynamics/UploadImg" },
+        { text: "表格", link: "/Components/dynamics/Table" },
+        {
+          text: "获取验证码按钮",
+          link: "/Components/dynamics/ValidationCountdown",
+        },
+      ],
+    },
+  ],
+  "/Styles/": [
+    {
+      text: "基础",
+      collapsible: true,
+      link: "/Styles/Gradient",
+      items: [
+        { text: "渐变合集", link: "/Styles/Gradient" },
+        { text: "鼠标样式", link: "/Styles/Cursor" },
+        { text: "文字溢出省略号", link: "/Styles/Ellipsis" },
+        { text: "遮罩层合集", link: "/Styles/MaskCollection" },
+      ],
+    },
+  ],
+  "/Directives/": [
+    {
+      text: "开发指南",
+      collapsible: true,
+      items: [{ text: "快速开始", link: "/Directives/base/start" }],
+    },
+    {
+      text: "自定义指令",
+      collapsible: true,
+      items: [
+        { text: "水波扩散", link: "/Directives/WaveDiffuse" },
+        { text: "文字悬浮变色", link: "/Directives/TextHoverColor" },
+        { text: "打字机(单行)", link: "/Directives/TypewriterSingle" },
+        { text: "打字机(多行)", link: "/Directives/TypewriterMultiple" },
+        { text: "粒子效果", link: "/Directives/Particle" },
+        { text: "雪花飘落", link: "/Directives/SnowFalling" },
+        { text: "视频视差背景", link: "/Directives/ParallaxVideo" },
+        { text: "图片视差背景", link: "/Directives/ParallaxImg" },
+        { text: "卡片扫光", link: "/Directives/SweepLight" },
+        { text: "按下拖动", link: "/Directives/DownDrag" },
+        { text: "渐变蒙版", link: "/Directives/MaskGradient" },
+        { text: "表格经典布局", link: "/Directives/TableLayout" },
+        { text: "文件拖拽解析", link: "/Directives/DragFile" },
+        { text: "查看图片", link: "/Directives/ViewImg" },
+      ],
+    },
+  ],
+
+  "/Functions/": [
+    {
+      text: "基础",
+      collapsable: false,
+      items: [
+        { text: "返回数据类型", link: "/Functions/ordinary/Type" },
+        { text: "判断数据类型", link: "/Functions/ordinary/IsType" },
+        { text: "控制全屏显示", link: "/Functions/ordinary/Full" },
+        { text: "随机数", link: "/Functions/ordinary/Random" },
+        { text: "字符串去重", link: "/Functions/ordinary/StrDelRep" },
+        { text: "数组深度去重", link: "/Functions/ordinary/ArrDelRep" },
+        { text: "对象深度去重", link: "/Functions/ordinary/ObjDelRep" },
+        {
+          text: "获取浏览器内核版本",
+          link: "/Functions/ordinary/BrowserV",
+        },
+        { text: "判断是否为移动端", link: "/Functions/ordinary/IsPhone" },
+        { text: "判断当前设备类型", link: "/Functions/ordinary/IsDevice" },
+        { text: "Promise定时器", link: "/Functions/ordinary/PromiseTimeout" },
+      ],
+    },
+    {
+      text: "丰富",
+      collapsable: false,
+      items: [
+        { text: "防抖", link: "/Functions/custom/Debounce" },
+        { text: "节流", link: "/Functions/custom/Throttle" },
+        { text: "数字每三位加逗号", link: "/Functions/custom/FmtNum" },
+        { text: "手机号脱敏处理", link: "/Functions/custom/HideMobile" },
+        { text: "复制到剪切板", link: "/Functions/custom/CopyText" },
+        { text: "日期格式化", link: "/Functions/custom/FmtTime" },
+        { text: "根据时间段问候", link: "/Functions/custom/TimeGreet" },
+        { text: "记录已过去大概时间", link: "/Functions/custom/TimePass" },
+        {
+          text: "记录已过去精确时间或倒计时",
+          link: "/Functions/custom/TimeCount",
+        },
+        { text: "中文转拼音", link: "/Functions/custom/Pinyin" },
+        { text: "正则搜索", link: "/Functions/custom/Search" },
+        {
+          text: "判断是否为指定类型的文件链接",
+          link: "/Functions/custom/UrlFileType",
+        },
+        { text: "全局替换指定字符串", link: "/Functions/custom/RepStr" },
+        { text: "获取文件名", link: "/Functions/custom/GetFileName" },
+        { text: "获取文件后缀名", link: "/Functions/custom/GetFileSuf" },
+        { text: "排序", link: "/Functions/custom/TypeSort" },
+        { text: "字节格式化", link: "/Functions/custom/FmtByte" },
+        { text: "秒数格式化", link: "/Functions/custom/FormatSeconds" },
+        { text: "小数、百分比互转", link: "/Functions/custom/PotEoPct" },
+        { text: "图片压缩", link: "/Functions/custom/ImageOptimizer" },
+        { text: "raf计时器", link: "/Functions/custom/FrameInterval" },
+        { text: "对象转Excel", link: "/Functions/custom/ObjToExc" },
+        { text: "Excel转对象", link: "/Functions/custom/ExcToObj" },
+        { text: "获取地址栏参数", link: "/Functions/custom/GetPathParams" },
+        { text: "对象深度合并", link: "/Functions/custom/DeepMearge" },
+        { text: "对象过滤", link: "/Functions/custom/RemoveEmptyField" },
+        { text: "深拷贝", link: "/Functions/custom/DeepCopy" },
+        { text: "保存为json/txt文件", link: "/Functions/custom/SaveFile" },
+        { text: "正则表单验证", link: "/Functions/custom/FormValidate" },
+        { text: "实时获取帧率", link: "/Functions/custom/GetFps" },
+        { text: "查看图片", link: "/Functions/custom/ScaleImage" },
+        {
+          text: "canvas截图/Base64转图片保存",
+          link: "/Functions/custom/Base64SaveImage",
+        },
+        { text: "断线重连", link: "/Functions/custom/RetryRequest" },
+      ],
+    },
+    {
+      text: "元素",
+      collapsable: false,
+      items: [
+        { text: "抛物线元素", link: "/Functions/element/Parabolic" },
+        { text: "移动视差动画", link: "/Functions/element/Parallax" },
+        { text: "滚动视差动画", link: "/Functions/element/ScrollParallax" },
+        {
+          text: "滚动视差动画迷你版",
+          link: "/Functions/element/ScrollParallaxMin",
+        },
+        { text: "滚动跟随动画", link: "/Functions/element/ScrollFollow" },
+        { text: "滚动入场动画", link: "/Functions/element/ScrollInto" },
+        {
+          text: "滚动入场动画(精简版)",
+          link: "/Functions/element/ScrollObserver",
+        },
+      ],
+    },
+  ],
+
+  "/Animates/": [
+    {
+      text: "基础",
+      collapsable: false,
+      items: [
+        { text: "电视", link: "/Animates/TV" },
+        { text: "圆", link: "/Animates/Round" },
+        { text: "旋", link: "/Animates/Spin" },
+        { text: "掀", link: "/Animates/Burqas" },
+        { text: "折", link: "/Animates/Fold" },
+        { text: "展", link: "/Animates/Deploy" },
+      ],
+    },
+  ],
+};

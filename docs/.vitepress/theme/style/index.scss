@@ -1,0 +1,179 @@
+@import './custom.scss';
+
+.sidebar-link-item.active {
+  background: rgba(82, 179, 94, 0.1);
+  background: rgba(82, 179, 94, 0.1);
+}
+
+.vp-doc {
+
+  // 代码片段下拉菜单
+  details {
+    padding: 10px !important;
+    margin: 10px 0 !important;
+
+    summary {
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      margin: 0 !important;
+
+      &:hover {
+        transition: 0.5s;
+        color: #2d5af1;
+      }
+    }
+
+    &::before {
+      content: '' !important;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+// 顶部 logo
+.VPNavBarTitle.has-sidebar {
+  border: none;
+}
+
+// 左侧选项链接
+.VPSidebarGroup {
+  .VPLink.link.link {
+    margin: 0;
+    padding: 5px 18px;
+    transition: 0.4s;
+  }
+
+  .VPLink.link.link.active {
+    background: lighten(#2d5af1, 39%);
+    border-radius: 6px;
+
+    .link-text {
+      font-weight: 600;
+    }
+  }
+}
+
+/* 自定义 */
+// 更改输入框样式
+
+* {
+  line-height: 1.5;
+}
+
+.ContainerBox[data-v-81ee13aa] input[type='text'] {
+  border-color: var(--font-color) !important;
+  padding-left: 0.5em;
+}
+
+// 清除表格上下边距
+.vp-doc table {
+  margin: 0;
+}
+
+// 整体宽度
+.VPDoc.has-aside .content-container[data-v-10119189] {
+  max-width: 100%;
+}
+
+
+// 代码块
+.theme-default-content pre code,
+.theme-default-content pre[class*='language-'] code,
+div[class*='language-']::before {
+  color: #58727e !important;
+}
+
+div[class*='language-'] pre,
+div[class*='language-'] pre[class*='language-'] {}
+
+.language-html {
+  .lang {
+    color: #58727e;
+  }
+}
+
+// 代码块边距
+.vp-doc div[class*='language-'] {
+  margin: 16px 0 !important;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px inset;
+  filter: saturate(1.5);
+}
+
+// table表格
+table {
+  width: 100%;
+  display: table !important;
+
+  th,
+  td {
+    border: none !important;
+  }
+
+  thead {
+    tr {
+      border: none !important;
+      text-align: left !important;
+    }
+  }
+
+  tbody {
+    tr {
+      td:nth-child(1) {
+        white-space: nowrap;
+      }
+
+      td:last-child {
+        white-space: nowrap;
+      }
+    }
+
+    td {
+      border-top: 1px solid var(--cb-shadow) !important;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// 滚动条
+*::-webkit-scrollbar {
+  width: 7.5px;
+  height: 7.5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #5d80f4;
+  border-radius: 5px;
+}
+
+h1 {
+  margin-bottom: 30px !important;
+}
+
+/* 演示组件盒子 */
+.demoBox {
+  width: 100%;
+  background-color: var(--vp-code-block-bg);
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0 5px 0px inset;
+  color: rgb(128, 128, 128);
+  margin: 25px 0;
+
+  img {
+    max-width: initial !important;
+  }
+}
