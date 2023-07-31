@@ -130,13 +130,7 @@ export const sidebar = {
         { text: "数字每三位加逗号", link: "/Functions/custom/FmtNum" },
         { text: "手机号脱敏处理", link: "/Functions/custom/HideMobile" },
         { text: "复制到剪切板", link: "/Functions/custom/CopyText" },
-        { text: "日期格式化", link: "/Functions/custom/FmtTime" },
         { text: "根据时间段问候", link: "/Functions/custom/TimeGreet" },
-        { text: "记录已过去大概时间", link: "/Functions/custom/TimePass" },
-        {
-          text: "记录已过去精确时间或倒计时",
-          link: "/Functions/custom/TimeCount",
-        },
         { text: "中文转拼音", link: "/Functions/custom/Pinyin" },
         { text: "正则搜索", link: "/Functions/custom/Search" },
         {
@@ -148,7 +142,6 @@ export const sidebar = {
         { text: "获取文件后缀名", link: "/Functions/custom/GetFileSuf" },
         { text: "排序", link: "/Functions/custom/TypeSort" },
         { text: "字节格式化", link: "/Functions/custom/FmtByte" },
-        { text: "秒数格式化", link: "/Functions/custom/FormatSeconds" },
         { text: "小数、百分比互转", link: "/Functions/custom/PotEoPct" },
         { text: "图片压缩", link: "/Functions/custom/ImageOptimizer" },
         { text: "raf计时器", link: "/Functions/custom/FrameInterval" },

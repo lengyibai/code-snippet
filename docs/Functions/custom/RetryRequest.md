@@ -9,29 +9,34 @@
 <ContainerBox title="基础用法">
 
 ```js
-const promiseFn = () => {
-  return new Promise((_, reject) => {
-    reject();
-  });
-};
-$retryRequest(promiseFn).then((res) => {
-  console.log(res);
+const res = await Util.TOOL.retryRequest(API_GAME.flows, {
+  noType: 7,
 });
 ```
 
 <ShowCode>
 <template #codes>
 
-```js
-export const $retryRequest = (promiseFn, delay = 3000) => {
-  return new Promise((resolve) => {
+```ts
+export const $retryRequest = <T>(
+  promiseFn: (params?: any) => Promise<T>,
+  params?: any
+): Promise<T> => {
+  return new Promise((resolve, reject) => {
+    let count = 0;
     const makeRequest = () => {
-      promiseFn()
+      count++;
+
+      if (count >= 6) {
+        reject("网络繁忙");
+        return;
+      }
+      promiseFn(params)
         .then((result) => {
           resolve(result);
         })
         .catch(() => {
-          setTimeout(makeRequest, delay);
+          setTimeout(makeRequest, 2000);
         });
     };
 
