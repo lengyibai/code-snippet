@@ -160,6 +160,7 @@ export const sidebar = {
           link: "/Functions/custom/Base64SaveImage",
         },
         { text: "断线重连", link: "/Functions/custom/RetryRequest" },
+        { text: "邮箱列表后缀匹配", link: "/Functions/custom/MatchEmail" },
       ],
     },
     {
