@@ -128,7 +128,7 @@ const typewriterSingle = {
             clearInterval(cursor_timer); //禁止光标闪烁
             let delText_timer = setInterval(() => {
               //开始调用删除文字的计时器
-              says = says.substr(0, says.length - 1); //逐个清除末尾文字
+              says = says.substring(0, says.length - 1); //逐个清除末尾文字
               lib.innerHTML = says; //每次删除一个字，输出在屏幕上
               if (says.length <= 0) {
                 //如果删除完毕

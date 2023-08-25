@@ -22,7 +22,7 @@ $type({ a: 1 }); //object
 
 ```js
 export function $type(o) {
-  return Object.prototype.toString.call(o).substr(8).replace(/]/g, '').toLowerCase();
+  return Object.prototype.toString.call(o).substring(8).replace(/]/g, '').toLowerCase();
 }
 ```
 

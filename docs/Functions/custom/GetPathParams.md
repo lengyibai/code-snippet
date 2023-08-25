@@ -20,7 +20,7 @@ export function $getPathParams() {
   let url = decodeURI(location.search);
   let params = {};
   if (url.indexOf('?') != -1) {
-    let str = url.substr(1);
+    let str = url.substring(1);
     let strs = str.split('&');
     for (let i = 0; i < strs.length; i++) {
       params[strs[i].split('=')[0]] = strs[i].split('=')[1];
