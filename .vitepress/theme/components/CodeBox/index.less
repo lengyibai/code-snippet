@@ -1,0 +1,42 @@
+.code-box {
+  width: 100%;
+
+  .code {
+    overflow: hidden;
+    width: 100%;
+    transition: all 0.5s;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &.open {
+      height: 0 !important;
+    }
+  }
+
+  .collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    user-select: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.25s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.25;
+    }
+  }
+}
+
+.iconRotate {
+  transform: rotate(-180deg);
+}

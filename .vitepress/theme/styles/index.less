@@ -1,0 +1,94 @@
+@import url("./custom.less");
+
+/* 主题 */
+
+//代码块
+.vp-adaptive-theme {
+  box-shadow: var(--demo-box-shadow-color) 0 0 5px 0 inset;
+}
+
+// 清除表格上下边距
+.vp-doc table {
+  margin: 0;
+}
+
+// table表格
+table {
+  display: table !important;
+  width: 100%;
+
+  th,
+  td {
+    border: none !important;
+  }
+
+  thead {
+    th {
+      white-space: nowrap;
+    }
+
+    tr {
+      border: none !important;
+      text-align: left !important;
+    }
+  }
+
+  tbody {
+    tr {
+      td:nth-child(1) {
+        white-space: nowrap;
+      }
+
+      td:nth-child(2) {
+        min-width: 200px;
+      }
+
+      td:last-child {
+        white-space: nowrap;
+      }
+    }
+
+    td {
+      border-top: 1px solid var(--cb-shadow) !important;
+    }
+  }
+}
+
+/* 自定义 */
+
+* {
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+// 滚动条
+*::-webkit-scrollbar {
+  width: 7.5px;
+  height: 7.5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #5d80f4;
+}
+
+/* 演示组件盒子 */
+.demo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 25px 0;
+  padding: 25px;
+  box-shadow: var(--demo-box-shadow-color) 0 0 5px 0 inset;
+  color: rgb(128 128 128);
+  background-color: #1a1a1a;
+
+  img {
+    max-width: initial !important;
+  }
+}
