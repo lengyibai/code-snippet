@@ -8,7 +8,7 @@ const config = defineConfig({
   lastUpdated: true,
   ignoreDeadLinks: true,
 
-  head: [["link", { rel: "icon", type: "image/png", href: "/images/logo.png" }]],
+  head: [["link", { rel: "icon", type: "image/png", href: "/lib/images/logo.png" }]],
   themeConfig: {
     siteTitle: "Lib",
     logo: "/images/logo.png",
