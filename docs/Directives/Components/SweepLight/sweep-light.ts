@@ -26,7 +26,7 @@ const vSweepLight: Directive<HTMLElement, Params> = {
       height: 100%;
       transform: skewX(45deg) translateX(${el.offsetWidth * 1.75}px);
       transition: all 2s;
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.75);
       filter: blur(20px);
     `;
       el.appendChild(light);
