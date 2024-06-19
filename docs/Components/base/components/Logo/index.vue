@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import { vSweepLight } from "../../../../Directives/Components/SweepLight/sweep-light";
+</script>
+
 <template>
   <div class="logo">
-    <div v-sweepLight="{ time: 3 }" class="lib">
+    <div v-sweep-light class="lib">
       <img src="/images/logo.png" />
     </div>
     <div class="name">Lib 代码片段</div>
