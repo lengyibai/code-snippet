@@ -57,6 +57,10 @@ export const _search = <T>(
   keys: string | string[],
   highlight = false,
 ): T[] => {
+  if (!Array.isArray(value) && value === "") {
+    return data;
+  }
+
   const arr: T[] = [];
 
   // 根据给定的值和键名进行搜索
@@ -70,7 +74,7 @@ export const _search = <T>(
         if (highlight && searchValue) {
           item[key] = item[key].replace(
             reg,
-            (match: string) => `<i style="color:#2980b9">${match}</i>`,
+            (match: string) => `<i style="color:var(--blue)">${match}</i>`,
           ); // 高亮匹配部分
         }
         arr.push(item);

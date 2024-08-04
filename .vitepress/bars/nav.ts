@@ -11,7 +11,7 @@ export const nav = [
   },
   {
     text: "函数",
-    link: "/docs/Functions/ordinary/Type",
+    link: "/docs/Functions/Type",
     activeMatch: "/docs/Functions/",
   },
   {
