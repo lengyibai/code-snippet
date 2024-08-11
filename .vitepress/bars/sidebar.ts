@@ -7,64 +7,26 @@ import type { DefaultTheme } from "vitepress";
  */
 export const sidebar = {
   "/docs/Components/": {
-    base: "/docs/Components/",
+    base: "/docs/Components",
     items: Components(),
   },
   "/docs/Directives/": {
-    base: "/docs/Directives/",
+    base: "/docs/Directives",
     items: Directives(),
   },
   "/docs/Functions/": {
-    base: "/docs/Functions/",
+    base: "/docs/Functions",
     items: Functions(),
   },
   "/docs/Styles/": {
-    base: "/docs/Styles/",
+    base: "/docs/Styles",
     items: Styles(),
   },
   "/docs/Animates/": {
-    base: "/docs/Animates/",
+    base: "/docs/Animates",
     items: Animates(),
   },
 };
-
-function Components(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: "开发指南",
-      items: [{ text: "介绍", link: "base/introduce" }],
-    },
-    {
-      text: "静态组件",
-      items: [
-        { text: "条纹加载按钮", link: "statics/StripeBtn" },
-        { text: "放射点击效果", link: "statics/TriggerRay" },
-        { text: "Grid数字模板布局", link: "statics/GridNumber" },
-        { text: "Grid字母模板布局", link: "statics/GridLetter" },
-        { text: "卡片翻转", link: "statics/FlipBox" },
-        { text: "移动端提示横屏浏览", link: "statics/PhoneTip" },
-        { text: "全屏滚动", link: "statics/FullScroll" },
-        { text: "环形进度条", link: "statics/CircularProgress" },
-      ],
-    },
-  ];
-}
-
-function Directives(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: "自定义指令",
-      items: [
-        { text: "水波扩散", link: "WaveDiffuse" },
-        { text: "文字悬浮变色", link: "TextHoverColor" },
-        { text: "打字机(单行)", link: "TypewriterSingle" },
-        { text: "打字机(多行)", link: "TypewriterMultiple" },
-        { text: "卡片扫光", link: "SweepLight" },
-        { text: "文件拖拽解析", link: "DragFile" },
-      ],
-    },
-  ];
-}
 
 function Functions(): DefaultTheme.SidebarItem[] {
   return [
@@ -73,6 +35,7 @@ function Functions(): DefaultTheme.SidebarItem[] {
       items: [
         { text: "返回数据类型", link: "/Type" },
         { text: "随机数", link: "/Random" },
+        { text: "随机整数数组", link: "/GetUniqueRandomNumbers" },
         { text: "字符串去重", link: "/StrDelRep" },
         { text: "数组深度去重", link: "/ArrDelRep" },
         { text: "对象深度去重", link: "/ObjDelRep" },
@@ -85,6 +48,7 @@ function Functions(): DefaultTheme.SidebarItem[] {
         { text: "Promise定时器", link: "/PromiseTimeout" },
         { text: "数组乱序", link: "/ShuffleArray" },
         { text: "浏览器标签标题交互", link: "/TagTitleTip" },
+        { text: "时间前缀console", link: "/TimeConsole" },
       ],
     },
     {
@@ -161,15 +125,53 @@ function Functions(): DefaultTheme.SidebarItem[] {
   ];
 }
 
+function Directives(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: "自定义指令",
+      items: [
+        { text: "水波扩散", link: "/WaveDiffuse" },
+        { text: "文字悬浮变色", link: "/TextHoverColor" },
+        { text: "打字机(单行)", link: "/TypewriterSingle" },
+        { text: "打字机(多行)", link: "/TypewriterMultiple" },
+        { text: "卡片扫光", link: "/SweepLight" },
+        { text: "文件拖拽解析", link: "/DragFile" },
+      ],
+    },
+  ];
+}
+
+function Components(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: "开发指南",
+      items: [{ text: "介绍", link: "/base/introduce" }],
+    },
+    {
+      text: "静态组件",
+      items: [
+        { text: "条纹加载按钮", link: "/statics/StripeBtn" },
+        { text: "放射点击效果", link: "/statics/TriggerRay" },
+        { text: "Grid数字模板布局", link: "/statics/GridNumber" },
+        { text: "Grid字母模板布局", link: "/statics/GridLetter" },
+        { text: "卡片翻转", link: "/statics/FlipBox" },
+        { text: "移动端提示横屏浏览", link: "/statics/PhoneTip" },
+        { text: "全屏滚动", link: "/statics/FullScroll" },
+        { text: "环形进度条", link: "/statics/CircularProgress" },
+      ],
+    },
+  ];
+}
+
 function Styles(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "基础",
       items: [
-        { text: "渐变", link: "Gradient" },
-        { text: "鼠标样式", link: "Cursor" },
-        { text: "文字溢出省略号", link: "Ellipsis" },
-        { text: "遮罩层合集", link: "MaskCollection" },
+        { text: "渐变", link: "/Gradient" },
+        { text: "鼠标样式", link: "/Cursor" },
+        { text: "文字溢出省略号", link: "/Ellipsis" },
+        { text: "遮罩层合集", link: "/MaskCollection" },
       ],
     },
   ];
@@ -180,12 +182,12 @@ function Animates(): DefaultTheme.SidebarItem[] {
     {
       text: "基础",
       items: [
-        { text: "TV", link: "TV" },
-        { text: "圆", link: "Round" },
-        { text: "旋", link: "Spin" },
-        { text: "掀", link: "Burqas" },
-        { text: "折", link: "Fold" },
-        { text: "展", link: "Deploy" },
+        { text: "TV", link: "/TV" },
+        { text: "圆", link: "/Round" },
+        { text: "旋", link: "/Spin" },
+        { text: "掀", link: "/Burqas" },
+        { text: "折", link: "/Fold" },
+        { text: "展", link: "/Deploy" },
       ],
     },
   ];

@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 起步
-      link: /docs/Components/base/introduce.html
+      link: /docs/Functions/Type.html
     - theme: alt
       text: GitHub
       link: https://github.com/lengyibai/code-snippet

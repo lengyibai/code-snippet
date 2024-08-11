@@ -1,5 +1,10 @@
 export const nav = [
   {
+    text: "函数",
+    link: "/docs/Functions/Type",
+    activeMatch: "/docs/Functions/",
+  },
+  {
     text: "组件",
     link: "/docs/Components/base/introduce",
     activeMatch: "/docs/Components/",
@@ -8,11 +13,6 @@ export const nav = [
     text: "自定义指令",
     link: "/docs/Directives/WaveDiffuse",
     activeMatch: "/docs/Directives/",
-  },
-  {
-    text: "函数",
-    link: "/docs/Functions/Type",
-    activeMatch: "/docs/Functions/",
   },
   {
     text: "样式",
