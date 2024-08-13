@@ -48,7 +48,8 @@ function Functions(): DefaultTheme.SidebarItem[] {
         { text: "Promise定时器", link: "/PromiseTimeout" },
         { text: "数组乱序", link: "/ShuffleArray" },
         { text: "浏览器标签标题交互", link: "/TagTitleTip" },
-        { text: "时间前缀console", link: "/TimeConsole" },
+        { text: "时间前缀彩色console", link: "/ColorConsole" },
+        { text: "获取地址栏参数", link: "/GetPathParams" },
       ],
     },
     {
