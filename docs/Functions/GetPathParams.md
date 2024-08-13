@@ -14,7 +14,7 @@
 /** @description 获取地址栏参数
  * @param key 参数名
  */
-export const _getPathParams = <T>(key: string) => {
+export const _getPathParams = () => {
   const v = location.href;
   const url = v.split("?")[1];
 
@@ -25,8 +25,7 @@ export const _getPathParams = <T>(key: string) => {
     return (pre[k] = v), pre;
   }, {});
 
-  const value = p[key] as T;
-  return value;
+  return p;
 };
 ```
 </template>
