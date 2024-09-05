@@ -36,6 +36,7 @@ function Functions(): DefaultTheme.SidebarItem[] {
         { text: "返回数据类型", link: "/Type" },
         { text: "随机数", link: "/Random" },
         { text: "随机整数数组", link: "/GetUniqueRandomNumbers" },
+        { text: "获取概率结果", link: "/ProbabilityResult" },
         { text: "字符串去重", link: "/StrDelRep" },
         { text: "数组深度去重", link: "/ArrDelRep" },
         { text: "对象深度去重", link: "/ObjDelRep" },
@@ -50,6 +51,8 @@ function Functions(): DefaultTheme.SidebarItem[] {
         { text: "浏览器标签标题交互", link: "/TagTitleTip" },
         { text: "时间前缀彩色console", link: "/ColorConsole" },
         { text: "获取地址栏参数", link: "/GetPathParams" },
+        { text: "对象深度JSON.parse", link: "/DeepJsonParse" },
+        { text: "旋转数组元素", link: "/RotateArray" },
       ],
     },
     {
