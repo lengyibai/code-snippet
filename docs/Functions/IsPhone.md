@@ -20,7 +20,14 @@ console.log(_isPhone);
 <template #codes>
 
 ```ts
-export const _isPhone = (() => /mobile|Android|iPhone/i.test(navigator.userAgent))();
+export const _isPhone = (() => {
+  const width = screen.width;
+  const height = screen.height;
+  const aspectRatio = width > height ? width / height : height / width;
+
+  const isPad = aspectRatio > 1 && aspectRatio < 1.7;
+  return /mobile|Android|iPhone/i.test(navigator.userAgent) && !isPad;
+})();
 ```
 
 </template>
