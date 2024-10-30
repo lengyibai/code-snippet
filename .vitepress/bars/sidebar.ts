@@ -77,6 +77,7 @@ function Functions(): DefaultTheme.SidebarItem[] {
         { text: "分类汇总", link: "/GroupArrayByKey" },
         { text: "高级搜索", link: "/Search" },
         { text: "邮箱列表后缀匹配", link: "/MatchEmail" },
+        { text: "数组分块", link: "/ChunkArray" },
       ],
     },
     {
