@@ -6,6 +6,10 @@ import type { DefaultTheme } from "vitepress";
  * 详情参考：https://vitepress.vuejs.org/guide/theme-sidebar
  */
 export const sidebar = {
+  "/docs/Functions/": {
+    base: "/docs/Functions",
+    items: Functions(),
+  },
   "/docs/Components/": {
     base: "/docs/Components",
     items: Components(),
@@ -13,10 +17,6 @@ export const sidebar = {
   "/docs/Directives/": {
     base: "/docs/Directives",
     items: Directives(),
-  },
-  "/docs/Functions/": {
-    base: "/docs/Functions",
-    items: Functions(),
   },
   "/docs/Styles/": {
     base: "/docs/Styles",
@@ -34,27 +34,35 @@ function Functions(): DefaultTheme.SidebarItem[] {
       text: "基础",
       items: [
         { text: "返回数据类型", link: "/Type" },
-        { text: "随机数", link: "/Random" },
-        { text: "随机整数数组", link: "/GetUniqueRandomNumbers" },
-        { text: "获取概率结果", link: "/ProbabilityResult" },
         { text: "字符串去重", link: "/StrDelRep" },
         { text: "数组深度去重", link: "/ArrDelRep" },
         { text: "对象深度去重", link: "/ObjDelRep" },
+        { text: "Promise定时器", link: "/PromiseTimeout" },
+        { text: "可控延迟调用函数", link: "/ControlledDelayedCall" },
+      ],
+    },
+    {
+      text: "随机",
+      items: [
+        { text: "随机数", link: "/Random" },
+        { text: "获取概率结果", link: "/ProbabilityResult" },
+        { text: "随机整数数组", link: "/GetUniqueRandomNumbers" },
+        { text: "随机颜色", link: "/RandomColor" },
+      ],
+    },
+    {
+      text: "浏览器",
+      items: [
         {
           text: "获取浏览器内核版本",
           link: "/BrowserV",
         },
+        { text: "获取地址栏参数", link: "/GetPathParams" },
+        { text: "设置网站标题及图标", link: "/SetTitleIcon" },
+        { text: "时间前缀彩色console", link: "/ColorConsole" },
+        { text: "浏览器标签标题交互", link: "/TagTitleTip" },
         { text: "判断是否为移动端", link: "/IsPhone" },
         { text: "判断当前设备类型", link: "/IsDevice" },
-        { text: "Promise定时器", link: "/PromiseTimeout" },
-        { text: "可控延迟调用函数", link: "/ControlledDelayedCall" },
-        { text: "数组乱序", link: "/ShuffleArray" },
-        { text: "浏览器标签标题交互", link: "/TagTitleTip" },
-        { text: "时间前缀彩色console", link: "/ColorConsole" },
-        { text: "获取地址栏参数", link: "/GetPathParams" },
-        { text: "对象深度JSON.parse", link: "/DeepJsonParse" },
-        { text: "旋转数组元素", link: "/RotateArray" },
-        { text: "设置网站标题及图标", link: "/SetTitleIcon" },
       ],
     },
     {
@@ -72,12 +80,15 @@ function Functions(): DefaultTheme.SidebarItem[] {
       text: "数据",
       items: [
         { text: "排序", link: "/TypeSort" },
-        { text: "对象深度合并", link: "/DeepMearge" },
-        { text: "对象过滤", link: "/RemoveEmptyField" },
+        { text: "数组乱序", link: "/ShuffleArray" },
+        { text: "旋转数组元素", link: "/RotateArray" },
+        { text: "数据分块", link: "/ChunkArray" },
+        { text: "数据深度JSON.parse", link: "/DeepJsonParse" },
+        { text: "数据深度合并", link: "/DeepMearge" },
+        { text: "数据过滤无效值", link: "/RemoveEmptyField" },
         { text: "分类汇总", link: "/GroupArrayByKey" },
         { text: "高级搜索", link: "/Search" },
         { text: "邮箱列表后缀匹配", link: "/MatchEmail" },
-        { text: "数组分块", link: "/ChunkArray" },
       ],
     },
     {
@@ -115,11 +126,8 @@ function Functions(): DefaultTheme.SidebarItem[] {
       items: [
         { text: "计算两点角度", link: "/GetCoordsAngle" },
         { text: "计算两点距离", link: "/GetCoordsDistance" },
+        { text: "弧度转角度", link: "/DegToRad" },
       ],
-    },
-    {
-      text: "元素操作",
-      items: [{ text: "抛物线元素", link: "/Parabolic" }],
     },
     {
       text: "其他",
