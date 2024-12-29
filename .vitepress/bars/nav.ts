@@ -1,8 +1,18 @@
 export const nav = [
   {
+    text: "Pixi.js方法",
+    link: "/docs/PixiJsTool/LibBitText",
+    activeMatch: "/docs/PixiJsTool/",
+  },
+  {
+    text: "Pixi.js组件",
+    link: "/docs/PixiJsComponents/LibText",
+    activeMatch: "/docs/PixiJsComponents/",
+  },
+  {
     text: "JS方法",
-    link: "/docs/Functions/Type",
-    activeMatch: "/docs/Functions/",
+    link: "/docs/Tool/Type",
+    activeMatch: "/docs/Tool/",
   },
   {
     text: "Vue组件",

@@ -6,9 +6,17 @@ import type { DefaultTheme } from "vitepress";
  * 详情参考：https://vitepress.vuejs.org/guide/theme-sidebar
  */
 export const sidebar = {
-  "/docs/Functions/": {
-    base: "/docs/Functions",
-    items: Functions(),
+  "/docs/PixiJsTool/": {
+    base: "/docs/PixiJsTool",
+    items: PixiJsTool(),
+  },
+  "/docs/PixiJsComponents/": {
+    base: "/docs/PixiJsComponents",
+    items: PixiJsComponents(),
+  },
+  "/docs/Tool/": {
+    base: "/docs/Tool",
+    items: Tool(),
   },
   "/docs/Components/": {
     base: "/docs/Components",
@@ -28,7 +36,30 @@ export const sidebar = {
   },
 };
 
-function Functions(): DefaultTheme.SidebarItem[] {
+function PixiJsComponents(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: "二次封装",
+      items: [
+        { text: "可控制大小容器", link: "/LibContainerSize" },
+        { text: "容器填充占位", link: "/LibFillClick" },
+        { text: "矩形绘制", link: "/LibRectBgColor" },
+        { text: "文本", link: "/LibText" },
+      ],
+    },
+  ];
+}
+
+function PixiJsTool(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: "二次封装",
+      items: [{ text: "位图", link: "/BitText" }],
+    },
+  ];
+}
+
+function Tool(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "基础",
