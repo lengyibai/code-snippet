@@ -1,0 +1,45 @@
+/* 径向渐变边框 */
+.global_radial-border(@width,@size,@color) {
+  border-style: solid;
+  border-width: @width;
+  border-color: transparent;
+  border-image: radial-gradient(@size circle at var(--x) var(--y), @color 0, transparent 100%);
+  border-image-slice: 1;
+}
+
+.container-box {
+  .global_radial-border(3px,200px,#5d80f4);
+
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 24px 0;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px var(--cb-shadow);
+  background-color: var(--cb-bg);
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+
+    &.marginBottom {
+      margin-bottom: 16px;
+    }
+  }
+
+  .desc {
+    overflow-x: auto;
+    color: var(--font-color);
+    font-size: 16px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  :deep(input[type="text"]) {
+    border: 2px solid #000;
+    outline: none;
+    background-color: transparent;
+  }
+}
