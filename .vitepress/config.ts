@@ -3,6 +3,8 @@ import { defineConfig } from "vitepress";
 import { nav } from "./bars/nav";
 import { sidebar } from "./bars/sidebar";
 
+const base = "/code-snippet/";
+
 const tokenizeSearchText = (text: string): string[] => {
   const normalizedText = text.toLocaleLowerCase("zh-CN");
   const identifiers = normalizedText.match(/[a-z0-9_]+/g) ?? [];
@@ -19,14 +21,14 @@ const tokenizeSearchText = (text: string): string[] => {
 };
 
 const config = defineConfig({
-  base: "/lib/",
+  base,
   lang: "zh-CN",
   title: "Lib代码片段",
   description: "收集项目中常用的 JavaScript 方法。",
   lastUpdated: true,
   metaChunk: true,
 
-  head: [["link", { rel: "icon", type: "image/png", href: "/lib/images/logo.png" }]],
+  head: [["link", { rel: "icon", type: "image/png", href: `${base}images/logo.png` }]],
   themeConfig: {
     siteTitle: "Lib",
     logo: "/images/logo.png",
