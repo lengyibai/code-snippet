@@ -4,17 +4,14 @@
 
 # 圆
 
-<ContainerBox title="基础用法">
-<template #desc>
+## 基础用法
 圆形开场、收场
-</template>
 
 <div class="demo-box">
 <Round />
 </div>
 
-<CodeBox>
-<template #codes>
+::: details 查看源码
 
 ```vue
 <script setup lang="ts">
@@ -122,11 +119,9 @@ onMounted(() => {
 </style>
 ```
 
-</template>
-</CodeBox>
+:::
 
-<CodeBox iskey>
-<template #codes>
+::: details 查看关键代码
 
 ```css
 .round-enter-active {
@@ -154,6 +149,4 @@ onMounted(() => {
 }
 ```
 
-</template>
-</CodeBox>
-</ContainerBox>
+:::

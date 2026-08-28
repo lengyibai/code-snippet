@@ -4,18 +4,15 @@
 
 # 旋
 
-<ContainerBox title="基础用法">
+## 基础用法
 
-<template #desc>
 类似电影开场镜头，圆形效果更好
-</template>
 
 <div class="demo-box">
 <Spin />
 </div>
 
-<CodeBox>
-<template #codes>
+::: details 查看源码
 
 ```vue
 <script setup lang="ts">
@@ -147,11 +144,9 @@ onMounted(() => {
 </style>
 ```
 
-</template>
-</CodeBox>
+:::
 
-<CodeBox iskey>
-<template #codes>
+::: details 查看关键代码
 
 ```css
 .spin-enter-active {
@@ -196,6 +191,4 @@ onMounted(() => {
 }
 ```
 
-</template>
-</CodeBox>
-</ContainerBox>
+:::

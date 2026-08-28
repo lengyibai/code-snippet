@@ -4,17 +4,14 @@
 
 # 折
 
-<ContainerBox title="基础用法">
-<template #desc>
+## 基础用法
 折叠、展开纸张
-</template>
 
 <div class="demo-box">
 <Fold />
 </div>
 
-<CodeBox>
-<template #codes>
+::: details 查看源码
 
 ```vue
 <script setup lang="ts">
@@ -122,11 +119,9 @@ onMounted(() => {
 </style>
 ```
 
-</template>
-</CodeBox>
+:::
 
-<CodeBox iskey>
-<template #codes>
+::: details 查看关键代码
 
 ```css
 .fold-enter-active {
@@ -156,6 +151,4 @@ onMounted(() => {
 }
 ```
 
-</template>
-</CodeBox>
-</ContainerBox>
+:::

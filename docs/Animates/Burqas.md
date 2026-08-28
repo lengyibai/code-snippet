@@ -4,17 +4,14 @@
 
 # 掀
 
-<ContainerBox title="基础用法">
-<template #desc>
+## 基础用法
 掀开、折叠布
-</template>
 
 <div class="demo-box">
 <Burqas />
 </div>
 
-<CodeBox>
-<template #codes>
+::: details 查看源码
 
 ```vue
 <script setup lang="ts">
@@ -130,11 +127,9 @@ onMounted(() => {
 </style>
 ```
 
-</template>
-</CodeBox>
+:::
 
-<CodeBox iskey>
-<template #codes>
+::: details 查看关键代码
 
 ```css
 .burqas-enter-active {
@@ -170,6 +165,4 @@ onMounted(() => {
 }
 ```
 
-</template>
-</CodeBox>
-</ContainerBox>
+:::

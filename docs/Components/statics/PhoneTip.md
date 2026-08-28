@@ -4,27 +4,19 @@
 
 # PhoneTip
 
-<ContainerBox title="介绍">
-<template #desc>
+## 介绍
 如果你在移动端浏览，将会提示你横屏查看
-</template>
-</ContainerBox>
 
 ## 代码演示
 
-<ContainerBox title="基础用法">
-<template #desc>
+### 基础用法
 当屏幕宽度小于屏幕高度时，会提示横屏查看
-</template>
 
 <PhoneTip />
-</ContainerBox>
 
 ## 组件源码
 
-<ContainerBox>
-<CodeBox>
-<template #codes>
+::: details 查看源码
 
 ```vue
 <script setup lang="ts">
@@ -109,6 +101,5 @@ onMounted(() => {
 }
 </style>
 ```
-</template>
-</CodeBox>
-</ContainerBox>
+
+:::

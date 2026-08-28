@@ -7,15 +7,10 @@
   box-shadow: var(--demo-box-shadow-color) 0 0 5px 0 inset;
 }
 
-// 清除表格上下边距
+// 表格保留 VitePress 原生的移动端横向滚动行为
 .vp-doc table {
-  margin: 0;
-}
-
-// table表格
-table {
-  display: table !important;
   width: 100%;
+  margin: 0;
 
   th,
   td {
@@ -49,7 +44,7 @@ table {
     }
 
     td {
-      border-top: 1px solid var(--cb-shadow) !important;
+      border-top: 1px solid var(--table-border-color) !important;
     }
   }
 }
