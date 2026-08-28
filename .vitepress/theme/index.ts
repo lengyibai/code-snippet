@@ -1,10 +1,8 @@
 import DefaultTheme from "vitepress/theme";
 import type { Theme } from "vitepress";
 
-import "./styles/index.less";
+import "./sidebar.css";
 
-const theme: Theme = {
-  ...DefaultTheme,
-};
+const theme: Theme = DefaultTheme;
 
 export default theme;

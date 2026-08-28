@@ -1,0 +1,9 @@
+@media (min-width: 960px) {
+  :root {
+    --vp-sidebar-width: clamp(360px, 28vw, 400px);
+  }
+
+  .VPSidebarItem .text {
+    white-space: nowrap;
+  }
+}

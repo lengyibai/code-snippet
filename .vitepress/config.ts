@@ -22,7 +22,7 @@ const config = defineConfig({
   base: "/lib/",
   lang: "zh-CN",
   title: "Lib代码片段",
-  description: "收集项目中常用的 Vue 组件和 CSS 动画。",
+  description: "收集项目中常用的 JavaScript 方法。",
   lastUpdated: true,
   metaChunk: true,
 

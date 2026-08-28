@@ -1,16 +1,6 @@
 module.exports = {
   extends: ["stylelint-config-standard"],
   plugins: ["stylelint-order"],
-  overrides: [
-    {
-      files: ["**/*.(less|vue)"],
-      customSyntax: "postcss-less",
-    },
-    {
-      files: ["**/*.(vue)"],
-      customSyntax: "postcss-html",
-    },
-  ],
   rules: {
     "custom-property-empty-line-before": null,
     "selector-class-pattern": null, //必须使用中划线命名
