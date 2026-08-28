@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 import { nav } from "./bars/nav";
 import { sidebar } from "./bars/sidebar";
 
-const base = "/";
+const base = "/code-snippet/";
 
 const tokenizeSearchText = (text: string): string[] => {
   const normalizedText = text.toLocaleLowerCase("zh-CN");
